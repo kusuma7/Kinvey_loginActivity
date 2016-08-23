@@ -42,7 +42,6 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onFailure(Throwable throwable) {
                 Log.e(TAG, "onFailure: ", throwable);
-
             }
         });
     }

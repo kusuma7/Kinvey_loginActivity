@@ -77,6 +77,7 @@ public class LoginActivity extends KinveyActivity {
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
     }
+
     private void toMainActivity() {
         Intent intent =new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);

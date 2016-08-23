@@ -17,6 +17,7 @@ public class KinveyActivity extends AppCompatActivity {
     }
 
     public Client getClient(){
+
        return ((MainApplication)getApplication()).getClient();
     }
 }

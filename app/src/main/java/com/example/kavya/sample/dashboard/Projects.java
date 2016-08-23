@@ -68,5 +68,6 @@ public class Projects {
     @Override
     public String toString() {
         return name + " \n " + price;
+
     }
 }
