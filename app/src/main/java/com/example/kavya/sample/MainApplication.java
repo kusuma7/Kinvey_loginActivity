@@ -9,7 +9,7 @@ import com.kinvey.android.Client;
  */
 public class MainApplication extends Application {
 
-   private Client client;
+   private static Client client;
     @Override
 
     public void onCreate(){
@@ -21,7 +21,7 @@ public class MainApplication extends Application {
          client = new Client.Builder("kid_H181PtvF","70541c2ff2b8466183762eee8bc4c4bb",getApplicationContext()).build();
     }
 
-    public Client getClient(){
+    public static Client getClient(){
         return client;
     }
 }

@@ -3,6 +3,7 @@ package com.example.kavya.sample.login;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.example.kavya.sample.KinveyActivity;
 import com.example.kavya.sample.R;
+import com.example.kavya.sample.dashboard.MainActivity;
 import com.kinvey.java.User;
 import com.kinvey.java.core.KinveyClientCallback;
 
@@ -76,7 +78,9 @@ public class LoginActivity extends KinveyActivity {
         mProgressView = findViewById(R.id.login_progress);
     }
     private void toMainActivity() {
-        getClient().user().logout().execute();
+        Intent intent =new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void attemptLogin() {
